@@ -1,0 +1,200 @@
+body {
+    background-color: #000000;
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#main-area {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    position: relative;
+    min-height: 100vh;
+}
+
+#top-navbar {
+    background-color: #04070e;
+    padding: 30px 24px; 
+}
+
+#page-content-wrapper {
+    padding: 20px;
+}
+
+/* Sidebar */
+#sidebar-wrapper {
+    min-height: 100vh;
+    width: 250px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #050912;
+    padding-top: 20px;
+    z-index: 1000;
+}
+
+.sidebar-logo {
+    text-align: center;
+    padding: 0 0 30px 0;
+}
+
+.sidebar-logo .logo-icon {
+    font-size: 2.5rem;
+    color: #ffd700;
+    border: 2px solid #ffd700;
+    border-radius: 50%;
+    padding: 5px;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 35px;
+}
+
+.list-group-item {
+    background-color: transparent !important;
+    border: none;
+    color: #e0e0e0;
+    padding: 12px 20px;
+    transition: background-color 0.2s;
+    font-size: 1rem;
+}
+
+.list-group-item:hover, .list-group-item.active {
+    color: #ffd700;
+    border-radius: 8px;
+}
+
+.list-group-item i {
+    margin-right: 10px;
+}
+
+/* Card */
+.stats-card {
+    background-color: #090d19;
+    color: #e0e0e0;
+    border-radius: 12px;
+    min-height: 100px;
+    padding: 32px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.stats-card h5 {
+    color:white;
+    font-size: 1.1rem;
+}
+
+.stats-card h3 {
+    color: #ffd700;
+    font-size: 1.5rem;
+    margin-top: 16px;
+}
+
+/* Card Grafik */
+.chart-card {
+    background-color: #090d19;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #2c2c2c;
+    margin-bottom: 20px;
+}
+
+.welcome-text {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.filter-group label {
+    color: #999;
+    margin-right: 10px;
+}
+
+/* Dropdown filter kustom */
+.form-select-dark {
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+
+/* --- Gaya Tabel Kustom --- */
+.table-dark-custom {
+    color: #e0e0e0;
+    /* Menggunakan border-spacing agar baris terlihat terpisah */
+    border-spacing: 0 8px; /* Jarak vertikal antar baris */
+    width: 100%;
+}
+
+.table-dark-custom thead th {
+    border-bottom: 1px solid #182240;
+    color: white;
+    font-weight: 500;
+    padding: 15px 10px; /* Padding lebih besar */
+    background-color: #090d19; /* Latar belakang header lebih gelap */
+}
+
+.table-dark-custom tbody tr {
+    border-bottom: 1px solid #182240;
+}
+.table-dark-custom tbody td {
+    background-color: #090d19; /* Latar belakang baris tabel */
+    color:white;
+    
+}
+
+.table-dark-custom tbody tr:hover {
+    background-color: #090d19; /* Efek hover yang halus */
+}
+
+.table-dark-custom tbody td {
+    border: none; /* Menghilangkan border standar sel */
+    padding: 15px 10px;
+}
+
+/* Badge */
+.badge-rejected {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.badge-success {
+    background-color: #198754;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.badge-disabled {
+    background-color: #6b6e75;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Logout */
+.logout-btn {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.logout-btn:hover {
+    color: #f8d7da; /* Warna merah muda lembut saat hover */
+}
